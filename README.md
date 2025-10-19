@@ -33,7 +33,7 @@ This application successfully implements all mandatory requirements:
 | Node.js | React |
 | Express.js | TypeScript |
 | TypeScript | Vite (Build Tool) |
-| SQLite (Database) | Chart.js (Data Visualization) |
+| SQLite (Database) | recharts (Data Visualization) |
 | `express-validator` (Validation) | `protobufjs` (Protobuf Decoding) |
 | `uuid` (Unique IDs) | Web Crypto API (Browser Cryptography) |
 
