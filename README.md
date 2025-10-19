@@ -93,6 +93,8 @@ npm run dev
 ```
 The React development server will start, and your browser will open to `http://localhost:8080` (or another available port).
 
+Note: If you are not running backend locally (meaning the backend is not running on `http://localhost:8000`), you have to change BASEURL in frontend folder -> src -> config -> api.ts 
+
 ## 📝 API Endpoint Documentation (Backend)
 
 The backend exposes the following endpoints:
