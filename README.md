@@ -4,20 +4,20 @@ This repository contains a TypeScript/Node backend and a React frontend (Vite + 
 
 ## Overview
 
-- Backend: `backend/` (Node + TypeScript).
+- Backend: `backend/` (Node + TypeScript)
 - Frontend: `frontend/` (Vite + React + SWC). Vite is configured to serve on port 8080 (`frontend/vite.config.ts`).
 
-> This project is commonly developed inside the provided dev container (Ubuntu 24.04.2 LTS). The instructions below assume you're in the dev container or otherwise have Node.js and a package manager installed.
+> These instructions assume you're working inside the provided dev container or otherwise have Node.js and a package manager available.
 
 ## Prerequisites
 
 - Node.js (v16 or newer recommended)
 - npm, yarn, or pnpm
-- (Optional) Docker / devcontainer tooling if you want to run inside the repo dev container
+- (Optional) Docker / devcontainer tooling
 
 ## Setup (one-time)
 
-Install dependencies for both frontend and backend from the repository root:
+From the repository root install dependencies for both projects:
 
 ```bash
 # install frontend deps
@@ -32,7 +32,7 @@ npm install    # or `pnpm install` / `yarn`
 cd ..
 ```
 
-You can also run both installs in parallel from the repo root (example with npm):
+Run both installs in parallel (optional):
 
 ```bash
 npm --prefix frontend install &
@@ -40,18 +40,18 @@ npm --prefix backend install &
 wait
 ```
 
-## Run in development
+## Run (development)
 
-Start backend and frontend in separate terminals (or use a process manager / tmux).
+Start backend and frontend in separate terminals (or use a multiplexer/process manager):
 
-1) Start backend
+Backend (run from `backend/`):
 
 ```bash
 cd backend
-npm run dev    # or `npm start` depending on the project's scripts
+npm run dev    # or `npm start` depending on available scripts
 ```
 
-2) Start frontend (Vite) — binds to all interfaces and uses port 8080
+Frontend (Vite — serves on port 8080):
 
 ```bash
 # QT-Global-software
@@ -60,20 +60,20 @@ This repository contains a TypeScript/Node backend and a React frontend (Vite + 
 
 ## Overview
 
-- Backend: `backend/` (Node + TypeScript).
+- Backend: `backend/` (Node + TypeScript)
 - Frontend: `frontend/` (Vite + React + SWC). Vite is configured to serve on port 8080 (`frontend/vite.config.ts`).
 
-> This project is commonly developed inside the provided dev container (Ubuntu 24.04.2 LTS). The instructions below assume you're in the dev container or otherwise have Node.js and a package manager installed.
+> These instructions assume you're working inside the provided dev container or otherwise have Node.js and a package manager available.
 
 ## Prerequisites
 
 - Node.js (v16 or newer recommended)
 - npm, yarn, or pnpm
-- (Optional) Docker / devcontainer tooling if you want to run inside the repo dev container
+- (Optional) Docker / devcontainer tooling
 
 ## Setup (one-time)
 
-Install dependencies for both frontend and backend from the repository root:
+From the repository root install dependencies for both projects:
 
 ```bash
 # install frontend deps
@@ -88,7 +88,7 @@ npm install    # or `pnpm install` / `yarn`
 cd ..
 ```
 
-You can also run both installs in parallel from the repo root (example with npm):
+Run both installs in parallel (optional):
 
 ```bash
 npm --prefix frontend install &
@@ -96,156 +96,37 @@ npm --prefix backend install &
 wait
 ```
 
-## Run in development
+## Run (development)
 
-Start backend and frontend in separate terminals (or use a process manager / tmux).
+Start backend and frontend in separate terminals (or use a multiplexer/process manager):
 
-1) Start backend
-
-```bash
-cd backend
-npm run dev    # or `npm start` depending on the project's scripts
-```
-
-2) Start frontend (Vite) — binds to all interfaces and uses port 8080
-# QT-Global-software
-
-This repository contains a TypeScript/Node backend and a React frontend (Vite + SWC).
-
-## Overview
-
-- Backend: `backend/` (Node + TypeScript).
-- Frontend: `frontend/` (Vite + React + SWC). Vite is configured to serve on port 8080 (`frontend/vite.config.ts`).
-
-> This project is commonly developed inside the provided dev container (Ubuntu 24.04.2 LTS). The instructions below assume you're in the dev container or otherwise have Node.js and a package manager installed.
-
-## Prerequisites
-
-- Node.js (v16 or newer recommended)
-- npm, yarn, or pnpm
-- (Optional) Docker / devcontainer tooling if you want to run inside the repo dev container
-
-## Setup (one-time)
-
-Install dependencies for both frontend and backend from the repository root:
-
-```bash
-# install frontend deps
-cd frontend
-npm install    # or `pnpm install` / `yarn`
-
-# install backend deps
-cd ../backend
-npm install    # or `pnpm install` / `yarn`
-
-# return to repo root
-cd ..
-```
-
-You can also run both installs in parallel from the repo root (example with npm):
-
-```bash
-npm --prefix frontend install &
-npm --prefix backend install &
-wait
-```
-
-## Run in development
-
-Start backend and frontend in separate terminals (or use a process manager / tmux).
-
-1) Start backend
+Backend (run from `backend/`):
 
 ```bash
 cd backend
-npm run dev    # or `npm start` depending on the project's scripts
+npm run dev    # or `npm start` depending on available scripts
 ```
 
-2) Start frontend (Vite) — binds to all interfaces and uses port 8080
+Frontend (Vite — serves on port 8080):
 
 ```bash
 cd frontend
 npm run dev
 ```
 
-Open the frontend at: http://localhost:8080
+Open the frontend at http://localhost:8080
 
-If you're running inside the dev container and want to open the app in the host browser, use the host $BROWSER from the container (if available):
-
-```bash
-# QT-Global-software
-
-This repository contains a TypeScript/Node backend and a React frontend (Vite + SWC).
-
-## Overview
-
-- Backend: `backend/` (Node + TypeScript).
-- Frontend: `frontend/` (Vite + React + SWC). Vite is configured to serve on port 8080 (`frontend/vite.config.ts`).
-
-> This project is commonly developed inside the provided dev container (Ubuntu 24.04.2 LTS). The instructions below assume you're in the dev container or otherwise have Node.js and a package manager installed.
-
-## Prerequisites
-
-- Node.js (v16 or newer recommended)
-- npm, yarn, or pnpm
-- (Optional) Docker / devcontainer tooling if you want to run inside the repo dev container
-
-## Setup (one-time)
-
-Install dependencies for both frontend and backend from the repository root:
-
-```bash
-# install frontend deps
-cd frontend
-npm install    # or `pnpm install` / `yarn`
-
-# install backend deps
-cd ../backend
-npm install    # or `pnpm install` / `yarn`
-
-# return to repo root
-cd ..
-```
-
-You can also run both installs in parallel from the repo root (example with npm):
-
-```bash
-npm --prefix frontend install &
-npm --prefix backend install &
-wait
-```
-
-## Run in development
-
-Start backend and frontend in separate terminals (or use a process manager / tmux).
-
-1) Start backend
-
-```bash
-cd backend
-npm run dev    # or `npm start` depending on the project's scripts
-```
-
-2) Start frontend (Vite) — binds to all interfaces and uses port 8080
-
-```bash
-cd frontend
-npm run dev
-```
-
-Open the frontend at: http://localhost:8080
-
-If you're running inside the dev container and want to open the app in the host browser, use the host $BROWSER from the container (if available):
+If you're inside the dev container and want to open the host browser from the container (host $BROWSER must be exposed), run:
 
 ```bash
 "$BROWSER" "http://localhost:8080"
 ```
 
-If the backend exposes a different port or requires environment variables, inspect `backend/package.json` and any `.env.example` files and export those variables before starting the backend.
+If the backend needs env variables or a database, check for `.env.example` or docs inside `backend/` and export the variables before starting the service.
 
 ## Build & Preview (production)
 
-To build the frontend and preview the production bundle locally:
+Frontend build & preview:
 
 ```bash
 cd frontend
@@ -253,7 +134,7 @@ npm run build
 npm run preview -- --port 8080
 ```
 
-For the backend, if there's a build step:
+Backend build & run (if applicable):
 
 ```bash
 cd backend
@@ -263,12 +144,10 @@ npm start
 
 ## Troubleshooting
 
-- Port conflict: change the port in `frontend/vite.config.ts` or pass a custom port to Vite (`npm run dev -- --port 3000`).
-- Missing scripts: inspect `frontend/package.json` and `backend/package.json` for available scripts and adjust the commands above accordingly.
+- Port conflicts: change the port in `frontend/vite.config.ts` or pass `--port <n>` to Vite.
+- Missing scripts: inspect `frontend/package.json` and `backend/package.json` for available scripts and adjust commands accordingly.
+- Dev container networking: ensure ports are forwarded from the container to the host if needed.
 
-## Notes
+---
 
-- Vite config: see `frontend/vite.config.ts` (host set to `::`, port `8080`).
-- Backend services, proto files, or other infrastructure may require additional setup (databases, gRPC servers, environment variables). Check `backend/` for service-specific README or env examples.
-
-If you'd like, I can add a top-level npm/pnpm workspace or convenience scripts to start both services together.
+If anything is missing or you want me to add convenient top-level scripts (or a devcontainer README), tell me which approach you prefer and I will add it.
